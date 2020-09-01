@@ -4,8 +4,63 @@
     padding: 0;
 }
 
+/*
+*** Formatações em geral do site: ***
+*/
 body { /*Seletor criado para definir uma formatação para o body do nosso site*/
     font-size: 1em;
     font-family: "Trebuchet MS, Helvetica, sans-serif";
     background: #e6e6e6;
 }
+
+h1 { /*Seletor criado para definir a formatação para o título h1*/
+    color: #4e4e4e; /*Definindo uma cor para o texto*/
+    font-size: 2.5em; /*Definindo o tamanho do texto em relação ao tamanho do body*/
+}
+
+.branco { /*Classe criada para formatar a palavra Blog*/
+    color: white;
+}
+
+
+/*
+*** Formatação dos links no topo do site ***
+*/
+/*Formatando links:*/	
+a {
+    padding-top: 8px; /*Definindo o espaçamento interno entre os links*/
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none; /*Retirando os underline embaixo dos links*/
+}
+/*Links não visitados:*/
+a:link {
+    color: #FFF;
+}
+/*Links visitados:*/
+a:visited {
+    color: #FFF;
+}
+/*Links Hover:*/
+a:hover {
+    color: #f7b600;
+    background-color: #FFF;
+}
+/*
+*** Layout do site: ***
+*/
+#area_cabecalho{ /*id criado para formatar o container do topo do site*/
+    background-color: #f7b600; /*Definindo a cor do container*/
+    padding: 15px; /*Definindo um espaçamento interno entre os elementos do topo do site com o container do topo*/
+    text-align: center; /*Alinhando os elementos do container ao centro da página*/
+}
+
+#area_logo{
+    padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links*/
+}
+
+#area_menu{
+    padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links */
+}
+
