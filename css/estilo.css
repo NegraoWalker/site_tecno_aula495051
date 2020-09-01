@@ -1,0 +1,11 @@
+/*Limpar formatações padrão:*/
+* { /*Seletor criado para limpar as formatações de margin e padding do nosso site*/
+    margin: 0;
+    padding: 0;
+}
+
+body { /*Seletor criado para definir uma formatação para o body do nosso site*/
+    font-size: 1em;
+    font-family: "Trebuchet MS, Helvetica, sans-serif";
+    background: #e6e6e6;
+}
