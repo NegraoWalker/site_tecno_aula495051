@@ -8,9 +8,9 @@
 *** Formatações em geral do site: ***
 */
 body { /*Seletor criado para definir uma formatação para o body do nosso site*/
-    font-size: 1em;
-    font-family: "Trebuchet MS, Helvetica, sans-serif";
-    background: #e6e6e6;
+    font-size: 1em; /*Definindo o tamanho base para servir de referência */
+    font-family: "Trebuchet MS, Helvetica, sans-serif"; /*Definindo o estilo de fonte do body*/
+    background: #e6e6e6; /*Definindo a cor de fundo do body*/
 }
 
 h1 { /*Seletor criado para definir a formatação para o título h1*/
@@ -48,19 +48,55 @@ a:hover {
     background-color: #FFF;
 }
 /*
-*** Layout do site: ***
+*** Formatações de Layout do site: ***
 */
-#area_cabecalho{ /*id criado para formatar o container do topo do site*/
+#area_cabecalho { /*id criado para formatar o container do topo do site*/
     background-color: #f7b600; /*Definindo a cor do container*/
     padding: 15px; /*Definindo um espaçamento interno entre os elementos do topo do site com o container do topo*/
     text-align: center; /*Alinhando os elementos do container ao centro da página*/
+    border: 1px solid red;
 }
 
-#area_logo{
+#area_logo {
     padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links*/
 }
 
-#area_menu{
+#area_menu {
     padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links */
 }
 
+#area_principal { /*Definindo o container da div*/
+    /*background-color: white;*/
+    width: 920px; /*Definindo o tamanho do container*/
+    border: 1px solid red;
+    margin-top: 0px ;
+    margin-bottom: 0px;
+    margin-left: auto; /*Definimos um espaçamento externo automático para left e right para que o contéudo fique centralizado*/
+    margin-right: auto;
+    /*Poderiamos colocar margin: 0 10; O primeiro valor define para top e bottom e o segundo para left e right*/
+}
+
+#area_de_postagens { /*Definindo o container da area de postagens do site*/
+    width: 660px; /*Definindo o tamanho do container*/
+    background-color: orange;
+    float: left; /*Definindo o elemento flutuante na página para que o conteudo principal fique a esquerda da página*/
+}
+
+#area_lateral { /*Definindo o container da area de menu lateral da página*/
+    width: 240px; /*Definindo o tamanho do container*/
+    background-color: orange;
+    float: right; /*Definindo o elemento flutuante na página para que o menu lateral fique a direita da página*/
+}
+
+#rodape { /*Definindo o container da area de rodape do site*/
+    background-color:#CCC;
+    clear: both; /*Limpando o fluxo dos elementos flutuantes para que a area de rodape fique correta na página*/
+    text-align: center; /*Centralizando o texto do rodape*/
+    padding: 15px; /*Definindo um espaçamento interno entre o texto com a area de rodape*/
+}
+
+.postagem { /*Definindo uma formatação para os contéudos das postagens*/
+    padding: 20px; /*Definindo um espaçamento interno*/
+    margin-bottom: 20px; /*Definindo um espaçamento externo entre a area do contéudo 1 e o rodape do site*/
+    background-color: white;
+}
