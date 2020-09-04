@@ -18,10 +18,28 @@ h1 { /*Seletor criado para definir a formatação para o título h1*/
     font-size: 2.5em; /*Definindo o tamanho do texto em relação ao tamanho do body*/
 }
 
+h2 { /*Seletor criado para definir a formatação para o título h2*/
+    color: #f7b600;
+}
+
+h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
 .branco { /*Classe criada para formatar a palavra Blog*/
     color: white;
 }
 
+.data_postagem { /*Classe criada para formatar a area de postagem abaixo do titulo da postagem*/
+    font-size: 0.8em;
+    border: 1px solid red;
+    padding-bottom: 10px; /*Definindo um espaçamento interno na parte inferior do container*/
+    margin-bottom: 10px; /*Definindo um espaçamento externo na parte inferior do container*/
+    display: block; /*Transformando o elemento de inline para block para definir espaçamentos internos e externos que
+    cobrem o container da area*/
+}
 
 /*
 *** Formatação dos links no topo do site ***
@@ -33,19 +51,35 @@ a {
     padding-left: 12px;
     padding-right: 12px;
     text-decoration: none; /*Retirando os underline embaixo dos links*/
+    border: 1px solid red;
 }
+/*Definindo uma formatação padrão para todos os links do site excetos o do id area_cabecalho*/
 /*Links não visitados:*/
 a:link {
-    color: #FFF;
+    color: #f7b600;
 }
 /*Links visitados:*/
 a:visited {
-    color: #FFF;
+    color: #f7b600;
 }
 /*Links Hover:*/
 a:hover {
+    text-decoration: underline;
+}
+/*Quando utilizamos o nome do id ou classe em seguida o código do link personalizamos os links que estão dentro da área que o id ou classe atende*/
+/*Links não visitados:*/
+#area_cabecalho a:link { /*Definindo uma formatação personalizada para os links que estão dentro da area de cabeçalho*/
+    color: #FFF;
+}
+/*Links visitados:*/
+#area_cabecalho a:visited { /*Definindo uma formatação personalizada para os links que estão dentro da area de cabeçalho*/
+    color: #FFF;
+}
+/*Links Hover:*/
+#area_cabecalho a:hover { /*Definindo uma formatação personalizada para os links que estão dentro da area de cabeçalho*/
     color: #f7b600;
     background-color: #FFF;
+    text-decoration: none;
 }
 /*
 *** Formatações de Layout do site: ***
@@ -59,10 +93,12 @@ a:hover {
 
 #area_logo {
     padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links*/
+    border: 1px solid red;
 }
 
 #area_menu {
     padding: 10px; /*Definindo o espaçamento interno entre o texto TecBlog e os links */
+    border: 1px solid red;
 }
 
 #area_principal { /*Definindo o container da div*/
@@ -74,22 +110,26 @@ a:hover {
     margin-left: auto; /*Definimos um espaçamento externo automático para left e right para que o contéudo fique centralizado*/
     margin-right: auto;
     /*Poderiamos colocar margin: 0 10; O primeiro valor define para top e bottom e o segundo para left e right*/
+    padding: 15px;
 }
 
 #area_de_postagens { /*Definindo o container da area de postagens do site*/
     width: 660px; /*Definindo o tamanho do container*/
-    background-color: orange;
+    /*background-color: orange;*/
+    border: 1px solid red;
     float: left; /*Definindo o elemento flutuante na página para que o conteudo principal fique a esquerda da página*/
 }
 
 #area_lateral { /*Definindo o container da area de menu lateral da página*/
     width: 240px; /*Definindo o tamanho do container*/
-    background-color: orange;
+    /*background-color: orange;*/
+    border: 1px solid red;
     float: right; /*Definindo o elemento flutuante na página para que o menu lateral fique a direita da página*/
 }
 
 #rodape { /*Definindo o container da area de rodape do site*/
     background-color:#CCC;
+    border: 1px solid red;
     clear: both; /*Limpando o fluxo dos elementos flutuantes para que a area de rodape fique correta na página*/
     text-align: center; /*Centralizando o texto do rodape*/
     padding: 15px; /*Definindo um espaçamento interno entre o texto com a area de rodape*/
@@ -99,4 +139,17 @@ a:hover {
     padding: 20px; /*Definindo um espaçamento interno*/
     margin-bottom: 20px; /*Definindo um espaçamento externo entre a area do contéudo 1 e o rodape do site*/
     background-color: white;
+    border: 1px solid red;
+}
+
+.conteudo_lateral { /*Classe criada para formatar os contéudos colocados na área lateral do site*/
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px; /*Definindo um espçamento externo entre as duas caixas da area lateral*/
+    border: 1px solid red;
+}
+
+.texto_lateral { /*Classe criada para formatar o texto do nossos contéudos da área lateral*/
+    font-size: 0.8em;
+    padding: 5px;
 }
